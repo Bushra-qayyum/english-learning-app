@@ -1,0 +1,109 @@
+/* Container */
+.lesson-container {
+  padding: 20px;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lesson-header h2 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.btn-create {
+  background: #3498db;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-create:hover {
+  background: #2980b9;
+}
+
+/* Grid */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.lesson-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+}
+
+.lesson-card h3 {
+  margin: 0 0 8px;
+  color: #34495e;
+}
+
+.lesson-card p {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.lesson-date {
+  display: block;
+  margin: 10px 0;
+  color: #95a5a6;
+  font-size: 13px;
+}
+
+/* Actions */
+.lesson-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+.btn-view {
+  background: #2ecc71;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: #27ae60;
+}
+
+/* Empty message */
+.no-lessons {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+}

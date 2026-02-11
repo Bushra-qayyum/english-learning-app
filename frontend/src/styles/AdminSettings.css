@@ -1,0 +1,126 @@
+/* src/styles/AdminSettings.css */
+.admin-settings {
+  min-height: 100vh;
+  background: #f5f0ff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-settings .admin-common-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-settings .admin-common-card {
+  background: white;
+  padding: 50px;
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(139,92,246,0.1);
+  border: 2px solid #ddd6fe;
+  text-align: center;
+}
+
+.admin-settings .admin-common-title {
+  font-size: 48px;
+  color: #6b21a8;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.admin-settings .admin-common-subtitle {
+  font-size: 22px;
+  color: #9333ea;
+  margin-bottom: 60px;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.settings-card {
+  background: white;
+  padding: 40px;
+  border-radius: 32px;
+  box-shadow: 0 15px 40px rgba(139,92,246,0.1);
+  border: 2px solid #ddd6fe;
+  transition: all 0.3s;
+}
+
+.settings-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(139,92,246,0.2);
+}
+
+.card-title {
+  font-size: 28px;
+  color: #6b21a8;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.setting-item {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.setting-label {
+  font-size: 18px;
+  color: #4c1d95;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.select-custom {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #ddd6fe;
+  font-size: 18px;
+  background: white;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-switch input {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.save-btn {
+  background: linear-gradient(45deg, #f59e0b, #d97706);
+  color: white;
+  padding: 20px 80px;
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(245,158,11,0.4);
+  transition: all 0.3s;
+}
+
+.save-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(245,158,11,0.5);
+}
+
+.success-message {
+  color: #16a34a;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.admin-footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #9333ea;
+  font-size: 18px;
+}

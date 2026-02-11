@@ -1,0 +1,49 @@
+.assignment-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card h2 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.assignment-card .desc {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.submit-card textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #1e8449;
+}
+
+.submitted-card {
+  background: #ecf9f1;
+  border: 1px solid #2ecc71;
+  color: #2e7d32;
+  border-radius: 10px;
+  padding: 20px;
+}

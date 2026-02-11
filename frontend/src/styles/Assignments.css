@@ -1,0 +1,228 @@
+/* src/styles/Assignments.css */
+.assignments-page {
+  padding: 20px;
+}
+
+.page-title {
+  color: #b71c1c;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.page-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Assignments Table */
+.assignments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.assignments-table th,
+.assignments-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.assignments-table th {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  color: #d35400;
+}
+
+.status.submitted {
+  color: #27ae60;
+}
+
+.status.overdue {
+  color: #c0392b;
+}
+
+.small-btn {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* Assignment Detail Page */
+.assignment-detail-page {
+  padding: 20px;
+}
+
+.assignment-detail {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.assignment-detail h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.assignment-detail .due-date {
+  color: #b71c1c;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.assignment-detail .description {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Answer Textarea */
+.answer-box {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1e8449;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #b71c1c;
+  font-size: 14px;
+}
+
+/* ✅ Modal Popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: popIn 0.3s ease-in-out;
+}
+
+.modal-box h3 {
+  margin: 0 0 15px;
+  color: #2e7d32;
+}
+
+.modal-box p {
+  color: #555;
+}
+
+.close-btn {
+  margin-top: 20px;
+  background: #b71c1c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #8b0000;
+}
+
+/* Animation */
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+/* Answer Box */
+.answer-box {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* View Submission Box */
+.submitted-view {
+  margin-top: 20px;
+}
+
+.submission-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  margin-top: 10px;
+}

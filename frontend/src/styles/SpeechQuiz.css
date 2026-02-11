@@ -1,0 +1,9 @@
+.speech-quiz { padding: 30px; text-align: center; font-family: 'Poppins', sans-serif; }
+.question-box { background: #f0f8ff; padding: 20px; border-radius: 12px; margin: 20px 0; }
+.sentence { font-size: 20px; font-weight: bold; color: #2c3e50; }
+.mic-btn { background: #e74c3c; color: white; padding: 20px 40px; font-size: 18px; border-radius: 50%; border: none; cursor: pointer; }
+.mic-btn:active { background: #c0392b; transform: scale(0.95); }
+.reset-btn { margin-left: 15px; padding: 10px 20px; background: #95a5a6; color: white; border: none; border-radius: 8px; }
+.transcript { margin: 30px 0; padding: 15px; background: #ecf0f1; border-radius: 10px; min-height: 80px; }
+.score.good { color: #27ae60; }
+.score.bad { color: #e74c3c; }

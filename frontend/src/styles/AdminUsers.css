@@ -1,0 +1,115 @@
+/* src/styles/AdminUsers.css */
+.admin-users {
+  min-height: 100vh;
+  background: #f5f0ff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-users .admin-common-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admin-users .admin-common-card {
+  background: white;
+  padding: 50px;
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(139,92,246,0.1);
+  border: 2px solid #ddd6fe;
+}
+
+.admin-users .admin-common-title {
+  font-size: 48px;
+  color: #6b21a8;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.admin-users .admin-common-subtitle {
+  font-size: 22px;
+  color: #9333ea;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-bar input {
+  padding: 15px 30px;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 30px;
+  border: 2px solid #ddd6fe;
+  font-size: 18px;
+  outline: none;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #7c3aed;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.admin-table td {
+  padding: 25px;
+  border-bottom: 2px solid #ddd6fe;
+}
+
+.admin-table tr:hover {
+  background: #f3e8ff;
+}
+
+.role-badge {
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.role-admin { background: #7c3aed; }
+.role-teacher { background: #f59e0b; }
+.role-student { background: #10b981; }
+
+.status-badge {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status-active { background: #bbf7d0; color: #166534; }
+.status-inactive { background: #fecaca; color: #991b1b; }
+
+.action-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.action-activate { background: #10b981; color: white; }
+.action-deactivate { background: #ef4444; color: white; }
+.action-delete { background: #991b1b; color: white; }
+
+.admin-footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #9333ea;
+  font-size: 18px;
+}

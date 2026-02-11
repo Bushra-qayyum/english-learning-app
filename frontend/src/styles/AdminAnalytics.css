@@ -1,0 +1,48 @@
+/* src/styles/AdminAnalytics.css */
+.admin-analytics {
+  min-height: 100vh;
+  background: #f5f0ff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-analytics .admin-common-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admin-analytics .admin-common-title {
+  font-size: 48px;
+  color: #6b21a8;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.admin-analytics .admin-common-subtitle {
+  font-size: 22px;
+  color: #9333ea;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.chart-card {
+  background: white;
+  padding: 30px;
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(139,92,246,0.1);
+  border: 2px solid #ddd6fe;
+}
+
+.chart-card h3 {
+  font-size: 28px;
+  color: #6b21a8;
+  margin-bottom: 20px;
+  text-align: center;
+}

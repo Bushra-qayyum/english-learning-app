@@ -1,0 +1,25 @@
+.teacher-community {
+  padding: 20px;
+}
+
+.teacher-community h2 {
+  margin-bottom: 5px;
+}
+
+.post-box textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.posts-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posts-list li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}

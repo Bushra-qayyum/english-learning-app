@@ -1,0 +1,58 @@
+/* Main Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Body - Sidebar + Content */
+.layout-body {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+/* Sidebar - Fixed, navbar ke neeche se start */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+  position: fixed;
+  left: 0;
+  top: 80px; /* Navbar height */
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 900;
+  box-shadow: 8px 0 25px rgba(30, 27, 75, 0.3);
+}
+
+/* Main Content - Sidebar ke right se */
+.layout-main {
+  margin-left: 260px;
+  flex: 1;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: #f5f0ff;
+}
+
+/* Footer inside main - always bottom */
+.layout-main > footer {
+  margin-top: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -260px;
+    transition: left 0.4s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .layout-main {
+    margin-left: 0;
+  }
+}

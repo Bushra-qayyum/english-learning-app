@@ -1,0 +1,8 @@
+[
+  {"id":"l1","title":"Basic Greetings","category":"Speaking","level":"Beginner","thumbnail":"https://via.placeholder.com/400x200?text=Greetings"},
+  {"id":"l2","title":"Common Verbs","category":"Grammar","level":"Beginner","thumbnail":"https://via.placeholder.com/400x200?text=Verbs"},
+  {"id":"l3","title":"Daily Vocabulary","category":"Vocabulary","level":"Elementary","thumbnail":"https://via.placeholder.com/400x200?text=Vocab"},
+  {"id":"l4","title":"Listening: Short Dialogues","category":"Listening","level":"Beginner","thumbnail":"https://via.placeholder.com/400x200?text=Listening"},
+  {"id":"l5","title":"Pronunciation: T Sounds","category":"Speaking","level":"Intermediate","thumbnail":"https://via.placeholder.com/400x200?text=Pronunciation"},
+  {"id":"l6","title":"Phrasal Verbs","category":"Grammar","level":"Advanced","thumbnail":"https://via.placeholder.com/400x200?text=Phrasal+Verbs"}
+]
