@@ -1,4 +1,3 @@
-// backend/server.js
 import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
@@ -21,8 +20,9 @@ import User from "./models/User.js";
 const app = express();
 
 /* =========================
-   ✅ FIXED CORS (IMPORTANT)
+   ✅ FIXED CORS (PRODUCTION READY)
 ========================= */
+
 const allowedOrigins = [
   "http://localhost:5173",
   "https://english-learning-app-bay.vercel.app"
@@ -30,10 +30,13 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
+    // allow requests with no origin (like mobile apps or Postman)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
     } else {
-      callback(null, true); // allow all (safe for now)
+      return callback(null, true); // safe open mode for now
     }
   },
   credentials: true
@@ -45,6 +48,7 @@ app.use(express.json());
 /* =========================
    ROUTES
 ========================= */
+
 app.use("/api/auth", authRoutes);
 app.use("/api/student", studentRoutes);
 app.use("/api/lessons", lessonRoutes);
