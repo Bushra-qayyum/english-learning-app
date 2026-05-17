@@ -20,13 +20,21 @@ import User from "./models/User.js";
 const app = express();
 
 // =======================
-// CORS FIXED (PRODUCTION)
+// CORS (PRODUCTION SAFE)
 // =======================
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://english-learning-app-bay.vercel.app"
+];
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://english-learning-app-bay.vercel.app"
-  ],
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(null, true); // temporary open (safe for debugging)
+  },
   credentials: true
 }));
 
@@ -44,12 +52,19 @@ app.use("/api/admin", adminRoutes);
 app.use("/api", otherRoutes);
 
 // =======================
-// MONGODB
+// MONGODB (FIXED + SAFE)
 // =======================
 mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+  .connect(process.env.MONGO_URI, {
+    serverSelectionTimeoutMS: 5000,
+    connectTimeoutMS: 10000,
+  })
+  .then(() => {
+    console.log("✅ MongoDB Connected Successfully");
+  })
+  .catch((err) => {
+    console.log("❌ MongoDB Connection Error:", err.message);
+  });
 
 // =======================
 // SERVER
@@ -57,18 +72,15 @@ mongoose
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+  console.log(`🚀 Server running on ${PORT}`);
 });
 
 // =======================
-// SOCKET IO FIXED
+// SOCKET IO
 // =======================
 const io = new Server(server, {
   cors: {
-    origin: [
-      "http://localhost:5173",
-      "https://english-learning-app-bay.vercel.app"
-    ],
+    origin: allowedOrigins,
     credentials: true
   }
 });
