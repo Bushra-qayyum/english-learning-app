@@ -1,12 +1,11 @@
-// src/utils/api.js
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
-  withCredentials: true    // YE LINE ADD KI HAI → SABSE ZAROORI HAI
+  baseURL: "https://english-learning-app-9bu2.onrender.com/api",
+  withCredentials: true
 });
 
-// Har request mein token bhejo
+// token attach
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) {
@@ -15,7 +14,7 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// 401 pe login pe bhej do
+// 401 handler
 api.interceptors.response.use(
   (response) => response,
   (error) => {
